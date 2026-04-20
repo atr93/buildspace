@@ -1,3 +1,5 @@
+import { FormEvent, useState } from 'react';
+
 type LockScreenProps = {
   hasVault: boolean;
   onUnlock: (password: string) => Promise<void>;

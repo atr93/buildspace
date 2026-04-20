@@ -52,6 +52,10 @@ python-tools/
   advanced/
     crypto-key-analyzer/
 shared/screenshots/
+mvc-core/
+  AdminOpsDashboard.Mvc/
+  ExpenseFlow.Mvc/
+  RideFlowDispatch.Mvc/
 ```
 
 ## ▶️ Quick Start
@@ -77,6 +81,21 @@ Binary screenshots were intentionally removed for branch/export compatibility in
 
 See placeholders in `shared/screenshots/README.md`.
 
+
+
+## 🧱 Parallel ASP.NET MVC Core Apps
+
+To satisfy server-rendered architecture requirements, parallel ASP.NET MVC Core projects are included:
+- `mvc-core/AdminOpsDashboard.Mvc`
+- `mvc-core/ExpenseFlow.Mvc`
+- `mvc-core/RideFlowDispatch.Mvc`
+
+Run pattern:
+```bash
+cd mvc-core/AdminOpsDashboard.Mvc
+dotnet restore
+dotnet run
+```
 
 ## ✅ Full Functionality Verification
 
