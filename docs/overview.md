@@ -18,6 +18,9 @@ portfolio-lab/
 │   │   └── password-strength-studio
 │   ├── intermediate/
 │   │   ├── expense-flow-tracker
+│   │   └── taskboard-lite
+│   └── advanced/
+│       ├── admin-analytics-dashboard
 │   │   ├── rideflow-dispatch
 │   │   ├── crypto-exchange-sim
 │   │   └── taskboard-lite
@@ -123,6 +126,7 @@ portfolio-lab/
 ## Implemented in Current Iteration
 
 - `web-apps/advanced/admin-analytics-dashboard`
+- `web-apps/intermediate/expense-flow-tracker`
 - `web-apps/advanced/secure-notes-app`
 - `web-apps/advanced/network-traffic-dashboard`
 - `web-apps/intermediate/expense-flow-tracker`

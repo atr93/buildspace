@@ -13,6 +13,7 @@ jobs:
       matrix:
         project:
           - web-apps/advanced/admin-analytics-dashboard
+          - web-apps/intermediate/expense-flow-tracker
           - web-apps/advanced/secure-notes-app
           - web-apps/advanced/network-traffic-dashboard
           - web-apps/intermediate/expense-flow-tracker
