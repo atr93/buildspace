@@ -1,0 +1,25 @@
+@model ExpenseViewModel
+@{ ViewData["Title"] = "Expense Tracker"; }
+
+<section class="card">
+  <h1>Expense Flow Tracker (MVC)</h1>
+  <p>Server-rendered portfolio version with budget snapshot.</p>
+  <div class="kpis">
+    <span>Budget: $@Model.Budget</span>
+    <span>Total: $@Model.Total</span>
+    <span>Remaining: $@Model.Remaining</span>
+  </div>
+</section>
+
+<section class="card">
+  <h2>Recent Expenses</h2>
+  <table>
+    <thead><tr><th>Title</th><th>Category</th><th>Amount</th><th>Date</th></tr></thead>
+    <tbody>
+    @foreach (var e in Model.Expenses)
+    {
+      <tr><td>@e.Title</td><td>@e.Category</td><td>$@e.Amount</td><td>@e.Date</td></tr>
+    }
+    </tbody>
+  </table>
+</section>

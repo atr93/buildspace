@@ -1,0 +1,21 @@
+@model RideDispatchViewModel
+@{ ViewData["Title"] = "Dispatch"; }
+
+<section class="card">
+  <h1>RideFlow Dispatch (MVC)</h1>
+  <p>Server-rendered dispatcher view with active/completed metrics.</p>
+  <div class="kpis"><span>Active: @Model.Active</span><span>Completed: @Model.Completed</span></div>
+</section>
+
+<section class="card">
+  <h2>Dispatch Queue</h2>
+  <table>
+    <thead><tr><th>Ride</th><th>Rider</th><th>Route</th><th>Fare</th><th>Status</th><th>Driver</th></tr></thead>
+    <tbody>
+    @foreach (var r in Model.Rides)
+    {
+      <tr><td>@r.Id</td><td>@r.Rider</td><td>@r.Pickup → @r.Dropoff</td><td>$@r.Fare</td><td>@r.Status</td><td>@(r.Driver ?? "-")</td></tr>
+    }
+    </tbody>
+  </table>
+</section>
