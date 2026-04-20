@@ -127,3 +127,8 @@ portfolio-lab/
 - `python-tools/advanced/crypto-key-analyzer`
 - `python-tools/intermediate/log-analyzer-cli`
 - `python-tools/easy/quick-calc-cli`
+
+
+## Verification
+
+For full local runtime verification steps, see `docs/runtime-verification.md`.

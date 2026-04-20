@@ -77,6 +77,23 @@ Binary screenshots were intentionally removed for branch/export compatibility in
 
 See placeholders in `shared/screenshots/README.md`.
 
+
+## ✅ Full Functionality Verification
+
+To verify all apps and tools on a normal developer machine, follow:
+- `docs/runtime-verification.md`
+
+Fast checks:
+```bash
+python3 scripts/offline_integrity_check.py
+```
+
+If npm install fails due proxy/registry issues:
+```bash
+npm config set registry https://registry.npmjs.org/
+npm cache clean --force
+```
+
 ## Public Safety Policy
 - No real credentials or private keys
 - No real target recon or exploit functionality
