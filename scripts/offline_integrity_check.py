@@ -28,6 +28,12 @@ PY_TOOLS = [
     'python-tools/advanced/crypto-key-analyzer/main.py',
 ]
 
+MVC_APPS = [
+    'mvc-core/AdminOpsDashboard.Mvc/AdminOpsDashboard.Mvc.csproj',
+    'mvc-core/ExpenseFlow.Mvc/ExpenseFlow.Mvc.csproj',
+    'mvc-core/RideFlowDispatch.Mvc/RideFlowDispatch.Mvc.csproj',
+]
+
 
 def fail(message: str) -> None:
     print(f"[FAIL] {message}")
@@ -75,6 +81,12 @@ def main() -> None:
 
     for tool in PY_TOOLS:
         validate_python_tool(tool)
+
+    for project in MVC_APPS:
+        target = ROOT / project
+        if not target.exists():
+            fail(f'Missing MVC project: {project}')
+        print(f'[OK] {project}')
 
     print('All offline checks passed.')
 

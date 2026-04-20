@@ -1,0 +1,35 @@
+@model DashboardViewModel
+@{
+    ViewData["Title"] = "Dashboard";
+}
+
+<section class="card">
+    <h1>Admin Operations Dashboard (MVC)</h1>
+    <p>Server-rendered ASP.NET Core MVC version of the portfolio dashboard.</p>
+</section>
+
+<section class="grid kpi-grid">
+@foreach (var kpi in Model.Kpis)
+{
+    <article class="card">
+        <h3>@kpi.Label</h3>
+        <p class="value">@kpi.Value</p>
+        <p class="delta">@kpi.Delta</p>
+    </article>
+}
+</section>
+
+<section class="card">
+    <h2>Incidents</h2>
+    <table>
+        <thead><tr><th>ID</th><th>Title</th><th>Severity</th><th>Owner</th><th>Status</th></tr></thead>
+        <tbody>
+        @foreach (var row in Model.Incidents)
+        {
+            <tr>
+                <td>@row.Id</td><td>@row.Title</td><td>@row.Severity</td><td>@row.Owner</td><td>@row.Status</td>
+            </tr>
+        }
+        </tbody>
+    </table>
+</section>

@@ -76,3 +76,13 @@ python3 -m py_compile \
 - All projects use synthetic/mock data only.
 - No credentials, secrets, or private endpoints are required.
 - Security-adjacent projects are educational and defensive in scope.
+
+
+## 7) Verify MVC Core apps (server-rendered)
+
+```bash
+cd mvc-core/AdminOpsDashboard.Mvc && dotnet restore && dotnet run && cd -
+cd mvc-core/ExpenseFlow.Mvc && dotnet restore && dotnet run && cd -
+cd mvc-core/RideFlowDispatch.Mvc && dotnet restore && dotnet run && cd -
+```
+

@@ -55,6 +55,10 @@ portfolio-lab/
 │   └── type-rush
 ├── shared/
 │   └── screenshots/
+├── mvc-core/
+│   ├── AdminOpsDashboard.Mvc
+│   ├── ExpenseFlow.Mvc
+│   └── RideFlowDispatch.Mvc
 ├── docs/
 │   └── overview.md
 └── .github/workflows/
@@ -127,6 +131,9 @@ portfolio-lab/
 - `python-tools/advanced/crypto-key-analyzer`
 - `python-tools/intermediate/log-analyzer-cli`
 - `python-tools/easy/quick-calc-cli`
+- `mvc-core/AdminOpsDashboard.Mvc`
+- `mvc-core/ExpenseFlow.Mvc`
+- `mvc-core/RideFlowDispatch.Mvc`
 
 
 ## Verification
