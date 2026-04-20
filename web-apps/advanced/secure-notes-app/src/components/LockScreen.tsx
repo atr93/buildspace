@@ -5,6 +5,8 @@ type LockScreenProps = {
   onUnlock: (password: string) => Promise<void>;
 };
 
+import { FormEvent, useState } from 'react';
+
 export function LockScreen({ hasVault, onUnlock }: LockScreenProps) {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
