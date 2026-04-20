@@ -13,6 +13,11 @@ jobs:
         project:
           - web-apps/advanced/admin-analytics-dashboard
           - web-apps/intermediate/expense-flow-tracker
+          - web-apps/advanced/secure-notes-app
+          - web-apps/advanced/network-traffic-dashboard
+          - web-apps/intermediate/expense-flow-tracker
+          - web-apps/intermediate/rideflow-dispatch
+          - web-apps/intermediate/crypto-exchange-sim
     defaults:
       run:
         working-directory: ${{ matrix.project }}
@@ -37,7 +42,11 @@ jobs:
         uses: actions/setup-python@v5
         with:
           python-version: '3.11'
+      - name: Install crypto analyzer dependencies
+        run: pip install -r python-tools/advanced/crypto-key-analyzer/requirements.txt
       - name: Log analyzer smoke test
         run: python3 python-tools/intermediate/log-analyzer-cli/src/main.py --file python-tools/intermediate/log-analyzer-cli/sample_data/app.log
       - name: Quick calc smoke test
         run: python3 python-tools/easy/quick-calc-cli/main.py op add 2 3
+      - name: Crypto analyzer smoke test
+        run: python3 python-tools/advanced/crypto-key-analyzer/main.py --key 0x1a2b3c

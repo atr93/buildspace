@@ -21,6 +21,13 @@ portfolio-lab/
 │   │   └── taskboard-lite
 │   └── advanced/
 │       ├── admin-analytics-dashboard
+│   │   ├── rideflow-dispatch
+│   │   ├── crypto-exchange-sim
+│   │   └── taskboard-lite
+│   └── advanced/
+│       ├── admin-analytics-dashboard
+│       ├── secure-notes-app
+│       ├── network-traffic-dashboard
 │       └── inventory-insight-hub
 ├── mobile-apps/
 │   ├── cross-platform/
@@ -116,5 +123,11 @@ portfolio-lab/
 
 - `web-apps/advanced/admin-analytics-dashboard`
 - `web-apps/intermediate/expense-flow-tracker`
+- `web-apps/advanced/secure-notes-app`
+- `web-apps/advanced/network-traffic-dashboard`
+- `web-apps/intermediate/expense-flow-tracker`
+- `web-apps/intermediate/rideflow-dispatch`
+- `web-apps/intermediate/crypto-exchange-sim`
+- `python-tools/advanced/crypto-key-analyzer`
 - `python-tools/intermediate/log-analyzer-cli`
 - `python-tools/easy/quick-calc-cli`
